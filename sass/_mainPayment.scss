@@ -1,0 +1,40 @@
+/* ESTILOS PAYMENT */
+
+.payment__main {
+    h1 {
+        font-size: $h1fontsize;
+    }
+    h2 {
+        font-size: $h2fontsize;
+    }
+    p {
+        font-size: $pfontsize;
+    }
+    h3 {
+        font-size: $h3fontsize;
+        color: rgb(85, 85, 85);
+    } 
+    margin-top: 100px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        position: relative;
+        animation-name: slidein;
+        animation-duration: 3s;
+
+        @include media-up(md){
+            @keyframes slidein {
+                0% {
+                    left: -100%;
+                    opacity: 0;
+                }
+                100% {
+                    left: 0;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

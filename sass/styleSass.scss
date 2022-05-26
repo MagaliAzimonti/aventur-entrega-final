@@ -1,0 +1,46 @@
+/* font-family:'Josefin Sans', sans-serif;
+font-family: 'Mulish', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Mulish:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+$h1fontsize: 35px;
+$h2fontsize: 22px;
+$pfontsize: 16px;
+$pfontsizemd: 18px;
+$h3fontsize: 20px;
+$h4fontsize: 20px;
+$mainBackground: url(../images/wallpaper_azul_oscuro_1920x1200_124.jpeg);
+$mainBackgroundColor: #1D2C55;
+$mainTypography: 'Josefin Sans', sans-serif;
+$mainJustify: center;
+$mainAlign: center;
+$mainBackgroundPosition: center;
+$mainShadow: 0px 0px 15px black;
+$mainOpacity: .75;
+
+$breakpoints: (
+    sm : 400px,
+    md : 768px,
+    lg : 1000px,
+);
+
+@mixin  media-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+@import "header.scss";
+@import "mainIndex.scss";
+@import "topButton.scss";
+@import "footer.scss";
+@import "mainContact.scss";
+@import "mainAbout.scss";
+@import "mainLocation.scss";
+@import "mainLogin.scss";
+@import "mainPayment.scss";

@@ -1,0 +1,11 @@
+/* ESTILOS HEADER */
+
+div {
+    header {
+        background-image: $mainBackground;     
+    }
+    .header__title {
+        font-family: $mainTypography;
+        font-size: 30px;
+    } 
+}

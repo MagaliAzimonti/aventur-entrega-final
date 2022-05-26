@@ -1,0 +1,66 @@
+/* ESTILOS ABOUT */
+
+.about__main {
+    margin-top: 100px;
+    h1 {
+        font-size: $h1fontsize;
+    }
+    h2 {
+        font-size: $h1fontsize;
+    }
+    iframe {
+        height: 250px;
+        padding: 0px 20px;
+
+        @include media-up(md) {
+            height: 450px;
+            padding: 0px 120px;
+        }
+    }
+    .gallery__about {
+        img {
+            width: 100%;
+        }
+        .img__big {
+            height: 150px;
+            margin-bottom: 10px;
+
+            @include media-up(sm){
+                height: 240px;
+            }
+
+            @include media-up(md) {
+                height: 220px;
+            }
+            @include media-up(lg) {
+                height: 300px;
+            }
+        }
+        .img__small {
+            height: 150px;
+            margin: 10px 0px;
+
+            @include media-up(sm){
+                height: 240px;
+            }
+
+            @include media-up(md) {
+                height: 160px;
+            }
+            @include media-up(lg) {
+                height: 230px;
+            }
+        }
+        .efecto {
+            @include media-up(md) {
+                transition: all 1s ease-in;
+            }
+        }
+        .efecto:hover {
+            @include media-up(md) {
+                transform: scale(1.1);
+                box-shadow: $mainShadow;
+            }
+        }
+    }
+}

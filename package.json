@@ -1,0 +1,17 @@
+{
+  "name": "aventur-entrega-tp-final---azimonti",
+  "version": "1.0.0",
+  "description": "Proyecto de sitio web Aventur, empresa de viajes y turismo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/styleSass.scss stylesheet/newStyle.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Magalí Azimonti",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

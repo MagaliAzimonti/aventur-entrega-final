@@ -1,0 +1,38 @@
+/* ESTILOS LOGIN */
+
+.login__body {
+    background-image: url(../images/login_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: $mainBackgroundPosition;
+    margin-top: 200px;
+
+    .login__form {
+        margin: 0 auto;
+        margin-top: 25%;
+        padding: 0;
+    }
+
+    .modal-content {
+        background-color: $mainBackgroundColor;
+        opacity: .85;
+        padding: 0 20px;
+        margin-bottom: 150px;
+        box-shadow: grey;
+        h1 {
+            color: whitesmoke;
+            opacity: .70;
+            font-size: $h1fontsize;
+        }
+        .user__image {
+            margin-top: -50px;
+            margin-bottom: 35px;
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                box-shadow: grey; 
+            }
+        }
+    }
+}
